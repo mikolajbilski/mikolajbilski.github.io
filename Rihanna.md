@@ -1,7 +1,0 @@
-# Rihanna
-Rihanna, właśc. Robyn Rihanna Fenty (ur. 20 lutego 1988 w Saint Michael) – barbadoska piosenkarka, modelka, aktorka, autorka tekstów, projektantka mody i businesswoman.
-
-Oba jej pierwsze albumy, tj. Music of the Sun (2005) oraz A Girl Like Me (2006), uplasowały się w Top 10 zestawienia magazynu Billboard. Z tych albumów duży komercyjny sukces odniosły piosenki „Pon de Replay” oraz „SOS”, który był pierwszym singlem w karierze artystki, który uplasował się na 1. miejscu listy Billboard Hot 100. Stała się powszechnie znana po wydaniu singla „Umbrella” pochodzącego z krążka Good Girl Gone Bad (2007). Album (oraz jego reedycja z 2008) był nominowany do dziewięciu nagród Grammy, wygrywając kategorię „Najlepsza współpraca rapowa/śpiewana”. W latach 2009–2012, po nagłośnionej w mediach kłótni ze swoim ówczesnym chłopakiem Chrisem Brownem, co roku wydawała jeden album: Rated R (2009), Loud (2010), Talk That Talk (2011) i Unapologetic (2012), który stał się jej pierwszym albumem notowanym na pierwszym miejscu listy Billboard 200. Każdy z albumów pokrył się platyną. Pochodziły z nich przeboje, takie jak: „Rude Boy”, „Only Girl (In the World)”, „What's My Name?”, „S&M”, „We Found Love”, „Where Have You Been” i „Diamonds”. Po odejściu z dotychczasowej wytwórni Def Jam wydała album pt. Anti (2016), który promowała przebojowym singlem „Work” i z którym dotarła do pierwszego miejsca na liście Billboard 200. 
-
-W 2012 zadebiutowała jako aktorka rolą w filmie Battleship: Bitwa o Ziemię. 
-
