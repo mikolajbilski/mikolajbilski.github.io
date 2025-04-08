@@ -216,6 +216,9 @@
   .flex {
     display: flex;
   }
+  .inline-block {
+    display: inline-block;
+  }
   .h-32 {
     height: calc(var(--spacing) * 32);
   }
