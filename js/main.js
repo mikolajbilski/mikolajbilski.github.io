@@ -17,13 +17,9 @@ class Special {
     }
 
     check_match(losowanko) {
-        console.log("CHECK")
-        console.log(losowanko.num)
-        console.log(losowanko.t1)
-        console.log(losowanko.t2)
         return (this.num === "*" || this.num === losowanko.num.toString()) &&
-               (this.t1 === "*" || this.num === losowanko.t1) &&
-               (this.t2 === "*" || this.num === losowanko.t2)
+               (this.t1 === "*" || this.t1 === losowanko.t1) &&
+               (this.t2 === "*" || this.t2 === losowanko.t2)
     }
 }
 
@@ -35,16 +31,8 @@ var specials = [
 
 // returns the object representing the special temacik, containing .audio_src and .author (strings)
 function get_special(losowanko) {   
-    console.log(losowanko.num)
-    console.log(losowanko.t1)
-    console.log(losowanko.t2)
     for (var special of specials) {
-        console.log("dupex")
-        console.log(special.num == "*" || special.num == losowanko.num)
-        console.log(special.t1 == "*" || special.t1 == losowanko.num)
-        console.log(special.t2 == "*" || special.t2 == losowanko.num)
         if (special.check_match(losowanko)) {
-            console.log("DUPA")
             return special
         }
     }
