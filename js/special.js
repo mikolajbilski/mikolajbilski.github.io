@@ -30,7 +30,7 @@ var specials = [
 
 
 // returns the object representing the special temacik, containing .audio_src and .author (strings)
-function get_special(losowanko) {
+export function get_special(losowanko) {
     for (const special of specials) {
         if (special.check_match(losowanko)) {
             return special
