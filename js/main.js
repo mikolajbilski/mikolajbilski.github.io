@@ -33,6 +33,7 @@ var specials = [
 function get_special(losowanko) {
     for (const special of specials) {
         if (special.check_match(losowanko)) {
+            console.log("DUPA")
             return special
         }
     }
