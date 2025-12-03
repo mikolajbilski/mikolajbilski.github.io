@@ -1,4 +1,44 @@
-﻿import * as Special from "./special.js"
+﻿class Losowanko {
+    constructor(num, t1, t2) {
+        this.num = num
+        this.t1 = t1
+        this.t2 = t2
+    }
+}
+
+class Special {
+    // use "*" for wildcard (if a special doesn't depend on the specific field of losowanko)
+    constructor(num, t1, t2, audio_name, author) {
+        this.num = num
+        this.t1 = t1
+        this.t2 = t2
+        this.audio_name = audio_name
+        this.author = author
+    }
+
+    check_match(losowanko) {
+        return (this.num == "*" || this.num == losowanko.num) &&
+               (this.t1 == "*" || this.num == losowanko.t1) &&
+               (this.t2 == "*" || this.num == losowanko.t2)
+    }
+}
+
+var specials = [
+    new Special("*", "jednowątkowych", "*", "jaki-jestes-wiciu", "wiciu"),
+    new Special("*", "*", "wiader", "kaszelek", "wiciu"),
+]
+
+
+// returns the object representing the special temacik, containing .audio_src and .author (strings)
+function get_special(losowanko) {
+    for (const special of specials) {
+        if (special.check_match(losowanko)) {
+            return special
+        }
+    }
+
+    return null
+}
 
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
@@ -10,10 +50,12 @@ var ryjce = ["majki", "domi", "beczka", "karas", "zloty", "juras", "zoha", "wici
 $.ajaxSetup({
     async: false
 });
+
 $.getJSON("database.json", function(json) {
     w1 = json.w1;
     w2 = json.w2;
 });
+
 var lottSpeed = 50;
 var lottTime = 600;
 var los1 = true;
@@ -53,7 +95,6 @@ stats.innerHTML = "twoje losowania: " + losowania + ", wylosowałeś/aś " + spe
 var started = false;
 
 function download() {
-
     document.getElementById("img01").innerHTML = "";
     html2canvas(document.getElementById("machine")).then(canvas => {
         canvas.toBlob(function(blob) {
@@ -145,8 +186,8 @@ function losowanko() {
     }
     else {
         progress.innerHTML = "losowanko zakonczone, jeszcze raz?";
-        var losowanko_res = new Special.Losowanko(b1.innerHTML, b2.innerHTML, b3.innerHTML)
-        var special = Special.get_special(losowanko_res)
+        var losowanko_res = new Losowanko(b1.innerHTML, b2.innerHTML, b3.innerHTML)
+        var special = get_special(losowanko_res)
         if (special) {
             a4.src = "sounds/" + special.audio_name + ".mp3"
             a4.play();
