@@ -30,8 +30,12 @@ var specials = [
 
 
 // returns the object representing the special temacik, containing .audio_src and .author (strings)
-function get_special(losowanko) {
+function get_special(losowanko) {   
+    console.log(losowanko.num)
+    console.log(losowanko.t1)
+    console.log(losowanko.t2)
     for (const special of specials) {
+        console.log("dupex")
         if (special.check_match(losowanko)) {
             console.log("DUPA")
             return special
