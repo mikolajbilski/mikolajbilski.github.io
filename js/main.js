@@ -21,9 +21,9 @@ class Special {
         console.log(losowanko.num)
         console.log(losowanko.t1)
         console.log(losowanko.t2)
-        return (this.num == "*" || this.num == losowanko.num) &&
-               (this.t1 == "*" || this.num == losowanko.t1) &&
-               (this.t2 == "*" || this.num == losowanko.t2)
+        return (this.num === "*" || this.num === losowanko.num.toString()) &&
+               (this.t1 === "*" || this.num === losowanko.t1) &&
+               (this.t2 === "*" || this.num === losowanko.t2)
     }
 }
 
