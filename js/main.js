@@ -38,7 +38,7 @@ function get_special(losowanko) {
     console.log(losowanko.num)
     console.log(losowanko.t1)
     console.log(losowanko.t2)
-    for (const special of specials) {
+    for (var special of specials) {
         console.log("dupex")
         console.log(special.num == "*" || special.num == losowanko.num)
         console.log(special.t1 == "*" || special.t1 == losowanko.num)
