@@ -36,9 +36,9 @@ function get_special(losowanko) {
     console.log(losowanko.t2)
     for (const special of specials) {
         console.log("dupex")
-        console.log(special.num)
-        console.log(special.t1)
-        console.log(special.t2)
+        console.log(special.num == "*" || special.num == losowanko.num)
+        console.log(special.t1 == "*" || special.t1 == losowanko.num)
+        console.log(special.t2 == "*" || special.t2 == losowanko.num)
         if (special.check_match(losowanko)) {
             console.log("DUPA")
             return special
