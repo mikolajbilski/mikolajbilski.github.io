@@ -160,7 +160,11 @@ function losowanko() {
 	}
     if (los3)
 	{
-        b3.innerHTML = w2[Math.floor(getRandomArbitrary(0, w2.length))];
+        if (b2.innerHTML == "wiedzmin 3") {
+            b3.innerHTML = "najlepszy";
+        } else {
+            b3.innerHTML = w2[Math.floor(getRandomArbitrary(0, w2.length))];
+        }
 		p3.style.width = ((time-100)/20)*100 + "%";
 	}
     ryjceDiv.innerHTML = "temacik dla: <img height='100px' class='shadowed' src='img/" + ryjce[Math.floor(getRandomArbitrary(0, ryjce.length))] + ".png'/>";
