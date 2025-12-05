@@ -146,12 +146,7 @@ function losowanko() {
     if (los2)
 	{
         if (b1.innerHTML == 3) {
-            if (Math.floor(getRandomArbitrary(0, 10)) == 1) {
-                b2.innerHTML = "wiedzmin 3";
-            }
-            else {
-                b2.innerHTML = w1[Math.floor(getRandomArbitrary(0, w1.length))];
-            }
+            b2.innerHTML = w1[Math.floor(getRandomArbitrary(0, w1.length))];
         }
         else {
             b2.innerHTML = w1[Math.floor(getRandomArbitrary(0, w1.length))];
