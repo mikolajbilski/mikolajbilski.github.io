@@ -43,7 +43,6 @@ function get_special(losowanko) {
             return special
         }
     }
-
     return null
 }
 
@@ -94,10 +93,12 @@ if (localStorage.volume) {
     document.getElementById("volume").value = volume;
     setVolume(volume);
 }
+
 if (localStorage.losowania) {
     losowania = Number(localStorage.losowania);
     specjalne = Number(localStorage.specjalne);
 }
+
 stats.innerHTML = "twoje losowania: " + losowania + ", wylosowałeś/aś " + specjalne + " specjalnych tematów";
 var started = false;
 
@@ -145,13 +146,12 @@ function losu_start() {
 function losowanko() {
     a2.play();
 
-    if (los1)
-	{
+    if (los1) {
         b1.innerHTML = Math.floor(getRandomArbitrary(2, 11));
 		p1.style.width = (time/80)*100 + "%";
 	}
-    if (los2)
-	{
+
+    if (los2) {
         if (b1.innerHTML == 3) {
             b2.innerHTML = w1[Math.floor(getRandomArbitrary(0, w1.length))];
         }
@@ -160,29 +160,26 @@ function losowanko() {
         }
 		p2.style.width = ((time-80)/20)*100 + "%";
 	}
-    if (los3)
-	{
-        if (b2.innerHTML == "wiedzmin 3") {
-            b3.innerHTML = "najlepszy";
-        } else {
-            b3.innerHTML = w2[Math.floor(getRandomArbitrary(0, w2.length))];
-        }
+
+    if (los3) {
+        b3.innerHTML = w2[Math.floor(getRandomArbitrary(0, w2.length))];
 		p3.style.width = ((time-100)/20)*100 + "%";
 	}
+
     ryjceDiv.innerHTML = "temacik dla: <img height='100px' class='shadowed' src='img/" + ryjce[Math.floor(getRandomArbitrary(0, ryjce.length))] + ".png'/>";
     time += 1;
-    if (time == 80)
-	{
+
+    if (time == 80) {
 		p1.style.width = "100%";
         los1 = false;
 	}
-    if (time == 100)
-	{
+
+    if (time == 100) {
 		p2.style.width = "100%";
         los2 = false;
 	}
-    if (time == 120)
-	{
+
+    if (time == 120) {
 		p3.style.width = "100%";
         los3 = false;
 	}
