@@ -26,7 +26,7 @@ class Special {
 var specials = [
     new Special("*", "jednowątkowych", "*", "jaki-jestes-wiciu", "wiciu"),
     new Special("*", "*", "wiader", "kaszelek", "wiciu"),
-    new Special("*", "wkurwionych", "*", "rage", "*"),
+    new Special("*", "wkurwionych", "*", "rage", "smerf"),
     new Special("*", "warszawskich", "raperów", "karconoszingway", "*"),
     new Special("*", "*", "kolosów", "kolos", "*"),
     new Special("*", "rozjebanych", "piw", "piwo", "zloty"),
