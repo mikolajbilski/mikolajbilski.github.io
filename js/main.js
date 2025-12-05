@@ -33,6 +33,7 @@ var specials = [
     new Special("*", "boskich", "przykazań", "przykazania", "*"),
     new Special("*", "najbardziej chujowych", "polskich zespołów", "skoczek", "beczka"),
     new Special("*", "*", "grześków tyci", "stopy", "domi"),
+    new Special("*", "bezrobotnych", "bezrobotnych", "aha", "beczka"),
 ]
 
 
